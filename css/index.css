@@ -386,14 +386,9 @@ h1,h2,h3,h4,h5,h6{
 	color: #ff2500;
 }
 
-.ourTeamBtn{
-	width: 100%;
-}
-
-.ourTeamBtn a{
+.ourTeam_Btn{
 	display: inline-block;
 	padding: 15px 35px;
-	position: absolute;
 	background: #ff2500;
 	color: #fff;
 	font-size: 16px;
@@ -406,7 +401,11 @@ h1,h2,h3,h4,h5,h6{
 	transition: all .200s ease;
 }
 
-.ourTeamBtn a:hover{
+.ourTeam_Btn a{
+	color: #fff;
+}
+
+.ourTeam_Btn:hover{
 	background: #252525;
 	color: #fff;
 	border-color: #252525;
@@ -474,7 +473,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 90px 0px;
 }
 
-.mfuiw_header > h2{
+.section_header > h2{
 	display: block;
 	position: relative;
 	text-align: center;
@@ -487,7 +486,7 @@ h1,h2,h3,h4,h5,h6{
 	letter-spacing: 0.02em;
 }
 
-.mfuiw_header > h2::after{
+.section_header > h2::after{
 	position: absolute;
     content: '';
     left: 50%;
@@ -498,7 +497,7 @@ h1,h2,h3,h4,h5,h6{
 	background-color: #ff2500;
 }
 
-.mfuiw_header > h2 + span{
+.section_header > h2 + span{
 	display: block;
 	color: #666;
 	text-align: center;
@@ -535,6 +534,76 @@ h1,h2,h3,h4,h5,h6{
 	line-height: 1.5;
 }
 
+
+/*----Price Plan Section----*/
+
+#price_section{
+	padding: 90px 0px;
+}
+
+.price_plan_wrapper{
+	background: #f6f5f5;
+}
+
+.single_price_box{
+	width: 290px;
+	background-color: #ffffff;
+	padding: 30px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	border-radius: 5px;
+	box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+	border: 1px solid #eee;
+}
+
+.price_title > h3{
+	font-size: 26px;
+	color: #000;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 500;
+}
+
+.price{
+	font-size: 50px;
+	margin-bottom: 0px;
+	color: #000;
+	font-weight: bold;
+}
+
+.price span{
+	display: inline-block;
+	margin-left: -7px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.price_box_content ul{
+	margin: 0;
+	padding: 25px 0 25px 0;
+}
+
+.price_box_content ul i{
+	position: absolute;
+	color: #ff5200;
+	display: inline-block;
+	left: 0;
+	font-size: 12px;
+}
+
+.price_box_content ul li{
+	list-style: none;
+	margin-bottom: 18px;
+	color: #57647c;
+	position: relative;
+	padding-left: 20px;
+}
+
+.price_plan_wrapper{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
 
 
 
