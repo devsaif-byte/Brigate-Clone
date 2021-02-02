@@ -473,6 +473,10 @@ h1,h2,h3,h4,h5,h6{
 	padding: 90px 0px;
 }
 
+.section_header{
+	margin-bottom: 50px;
+}
+
 .section_header > h2{
 	display: block;
 	position: relative;
@@ -517,7 +521,6 @@ h1,h2,h3,h4,h5,h6{
 .mfuiw_content_after_heading{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 50px;
 }
 
 .post h3{
@@ -580,7 +583,7 @@ h1,h2,h3,h4,h5,h6{
 
 .price_box_content ul{
 	margin: 0;
-	padding: 25px 0 25px 0;
+	padding: 25px 0 25px 0; 
 }
 
 .price_box_content ul i{
@@ -605,24 +608,243 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 50px;
 }
 
+/*----Idea List Section----*/
+
+#outer_container{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+	min-height: 350px;
+}
+
+.right_half{
+	float: right;
+	background: #222222;
+	width: 50%;
+}
+
+.right_half_header h2{
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 2rem;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+
+.right_half_header h2 + p{
+	color: #fff;
+	display: inline-block;
+	width: 97%;
+	margin: 0;
+}
+
+.innerBox{
+	padding: 60px;
+	position: relative;
+	display: inline-block;
+}
+
+.innerBox_right_half_content ul{
+	padding: 0;
+	
+}
+
+.innerBox_right_half_content ul li {
+	margin: 20px 0;
+	width: 400px;
+	float: left;
+	list-style: none;
+}
+
+.innerBox_right_half_content ul li > span {
+	color: #ff5200;
+	line-height: 1em;
+	font-size: 48px;
+	font-weight: 400;
+	float: left;
+	padding-right: 20px;
+}
+
+.innerBox_right_half_content ul li > h5 {
+    margin: 0;
+    padding: 0;
+	display: inline-block;
+	width: 80%;
+	text-transform: uppercase;
+	line-height: 1.4;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+}
+
+.innerBox_right_half_content ul li > p {
+    margin: 0;
+    padding: 0;
+	display: inline-block;
+	color: #fff;
+}
+
+.innerBox_right_half_content ul li > h5 > a {
+	color: #fff;
+	margin: 0;
+}
+
+/*Left Half Section*/
+
+.left_half{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.left_half img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*----Met Our Team Section-----*/
 
 
+.mot_single_box {
+	max-width: 255px;
+	box-sizing: border-box;
+    box-shadow: .5px 0px .5px 1px #e3e0e0;
+}
+.mot_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+.engeneer_image img {
+	width: 100%;
+}
+  #Team_members {
+	padding: 90px 0;
+}
+.engeneer_info {
+	border: 1px solid #f1f1f1;
+	text-align: center;
+	padding: 20px 0;
+}
+.E-name h4 {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: .5;
+	margin: 0;
+}
+.E-position {
+	font-size: 15px;
+	font-weight: 400;
+	padding-top: 5px;
+	text-transform: capitalize;
+}
 
+.Mot_join_team_btn{
+	display: inline-block;
+	padding: 15px 35px;
+	background: #333333;
+	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	border-radius: 4px;
+	transition: all .200s ease;
+	position: relative;
+	left: 42.5%;
+}
 
+.Mot_join_team_btn:hover{
+	background: #ff5200;
+	color: #fff;
+}
 
+.Mot_join_team_btn a {
+	color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+	letter-spacing: .08em;
+}
 
+/*-----Our Best Project Section-----*/
 
+#best_project{
+	background: #f5f6f6;
+	padding: 90px 0;
+}
 
+.project_wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 15px 0 15px;
+	justify-content: space-between;
+}
 
+.single_project {
+	max-width: 350px;
+	position: relative;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.project_image img {
+	width: 100%;
+	display: block;
+}
+.project_text {
+	position: absolute;
+	left: 0;
+	bottom: -60;
+	color: #fff;
+	background-image: linear-gradient(to top, #000,rgba(255, 255, 255, 0));
+	padding: 90px 25px 80px;
+	transition: .3s;
+}
 
+.project_text span {
+	margin-bottom: 10px;
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.2;
+	text-decoration: underline;
+}
 
+.project_btn {
+	color: #fff;
+	position: absolute;
+	bottom: 35px;
+	left: -60px;
+	opacity: 0;
+	visibility: hidden;
+}
 
+.project_btn i{
+	margin-left: 2px;
+	font-size: 12px;
+}
+.project_image {
+	width: 100%;
+}
+.project_title {
+	text-transform: uppercase;
+	margin: 0px;
+	font-weight: 500;
+}
 
+.single_project:hover .project_text{
+	transform: translateY(-55px);
+}
 
-
-
-
-
-
-
-
+.single_project:hover .project_btn{
+	transform: translateX(85px);
+	opacity: 1;
+	transition: all .3s ease-in-out;
+	visibility: visible;
+}
